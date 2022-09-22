@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okna dialogowe</title>
+</head>
+<body>
+    <button onclick="alertBox()">Alert</button><br><br>
+    <button onclick="confirmWrite()">Confirm</button><br><br>
+    <button onclick="promptBox()">Prompt</button><br><br>
+    <script>
+        const alertBox = () => {
+            alert("Hello, world!");
+        }
+        
+        const confirmWrite = () => {
+            document.write(confirm("Lubisz ciastka?"));
+        }
+
+        const promptBox = () => {
+            name = prompt("Jak się nazywasz?");
+            document.write(`Hejcia ${name}!`)
+        }
+        
+    </script>
+</body>
+</html>
